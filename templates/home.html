@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="container">
+    <table>
+        <ul>
+
+            {% for i in dicts %}
+
+
+            <tr>
+                <td>
+                    <li><font color="">{{i.name}}</font></li>
+                </td>
+                <td><p>
+                    <label>
+                        <input type="checkbox"/>
+                        <span>Done</span>
+                    </label>
+                </p></td>
+                <td><a href="{% url 'todo_list:delete' i.id %}"
+                       class="waves-effect waves-light btn-small red">Delete</a></td>
+
+
+                {% endfor %}
+            </tr>
+        </ul>
+    </table>
+</div>
+
+{% endblock %}

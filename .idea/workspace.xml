@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="db7876c8-14bf-418a-a7f2-c9fd5b74ec40" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="To_DO_List" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\sagar\PycharmProjects\To_DO_List\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cj1jU3delM30fQx0Ch619pXWdQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Denislvy/practise/models.py" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sagar\PycharmProjects\To_DO_List\templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="To_DO_List" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/todo_list" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/todo_list/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db7876c8-14bf-418a-a7f2-c9fd5b74ec40" name="Default Changelist" comment="" />
+      <created>1591027323038</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591027323038</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591119450620">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="96" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1591119450620" />
+    <state x="401" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592048564895">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="401" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720@0.0.1280.720" timestamp="1592048564895" />
+    <state x="421" y="117" key="FileChooserDialogImpl" timestamp="1592149236199">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1592149236199" />
+    <state width="1259" height="176" key="GridCell.Tab.0.bottom" timestamp="1591988046216">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1591988046216" />
+    <state width="1259" height="176" key="GridCell.Tab.0.center" timestamp="1591988046214">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1591988046214" />
+    <state width="1259" height="176" key="GridCell.Tab.0.left" timestamp="1591988046214">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1591988046214" />
+    <state width="1259" height="176" key="GridCell.Tab.0.right" timestamp="1591988046215">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1591988046215" />
+    <state width="1244" height="217" key="GridCell.Tab.1.bottom" timestamp="1591184482829">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1244" height="217" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1591184482829" />
+    <state width="1244" height="217" key="GridCell.Tab.1.center" timestamp="1591184482829">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1244" height="217" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1591184482829" />
+    <state width="1244" height="217" key="GridCell.Tab.1.left" timestamp="1591184482829">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1244" height="217" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1591184482829" />
+    <state width="1244" height="217" key="GridCell.Tab.1.right" timestamp="1591184482829">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1244" height="217" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1591184482829" />
+    <state x="79" y="199" width="996" height="707" key="SettingsEditor" timestamp="1592033743309">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="79" y="199" width="996" height="707" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1592033743309" />
+    <state x="337" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1592202099466">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="337" y="186" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1592202099466" />
+    <state x="383" y="5" key="refactoring.ChangeSignatureDialog" timestamp="1591382881965">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="383" y="5" key="refactoring.ChangeSignatureDialog/0.0.1280.720@0.0.1280.720" timestamp="1591382881965" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1591265155877">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1591265155877" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
