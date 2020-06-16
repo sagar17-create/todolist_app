@@ -13,3 +13,12 @@ def index(request):
         return render(request, 'home.html', {"dicts": Textbox.objects.all()})
     else:
         return render(request, 'home.html', {"dicts": Textbox.objects.all()})
+
+
+def update(request, update):
+
+    
+
+    return render(request,'update.html')
+
+
