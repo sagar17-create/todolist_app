@@ -15,9 +15,16 @@ def index(request):
         return render(request, 'home.html', {"dicts": Textbox.objects.all()})
 
 
-def update(request, update):
+def update(request, id):
 
-    
+    if request.method == "POST":
+        data = request.POST["search"]
+        textbox = Textbox(name = request.POST["name"])
+        Textbox.objects.get(pk = id).update(Textbox = textbox)
+        
+        return "success"
+            
+     
 
     return render(request,'update.html')
 
