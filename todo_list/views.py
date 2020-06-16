@@ -16,7 +16,7 @@ def index(request):
 
 
 def update(request, update):
-    x =
+
 
 
     
