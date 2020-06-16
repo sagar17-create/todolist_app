@@ -9,24 +9,41 @@
             {% for i in dicts %}
 
 
-            <tr>
-                <td>
-                    <li><font color="">{{i.name}}</font></li>
-                </td>
-                <td><p>
-                    <label>
-                        <input type="checkbox"/>
-                        <span>Done</span>
-                    </label>
-                </p></td>
-                <td><a href="{% url 'todo_list:delete' i.id %}"
-                       class="waves-effect waves-light btn-small red">Delete</a></td>
-                <td><a href="{% url 'todo_list:update' i.id %}"
-                       class="waves-effect waves-light btn-small red">Update</a></td>
+                <form action="{% url 'todo_list:update' i.id %}" method="POST">
+                    {% csrf_token %}
+
+                    <tr>
+
+                        <td>
+                            <li><input type="text" value="{{i.name}}" name="name" style="display:inline" ></li>
+                        </td>
+
+                        <td>
+                            <p>
+                                <label>
+                                    <input type="checkbox"/>
+                                    <span>Done</span>
+                                </label>
+                            </p>
+                        </td>
+
+                        <td><a href="{% url 'todo_list:delete' i.id %}"
+                            class="waves-effect waves-light btn-small red">Delete</a></td>
+
+                        <td>
+                            <a class="waves-effect waves-light btn-small red">
+                                <input type="submit" value="update">
+                            </a>
+                        </td>
+                    </tr>
+
+
+                </form>
+
+
 
 
                 {% endfor %}
-            </tr>
         </ul>
     </table>
 </div>
