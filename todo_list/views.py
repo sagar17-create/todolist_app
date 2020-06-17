@@ -6,6 +6,7 @@ def delete(request, number):
     Textbox.objects.get(id=number).delete()
     return render(request, 'home.html', {"dicts": Textbox.objects.all()})
 
+
 def index(request):
     if request.method == "POST":
         data = request.POST["search"]
@@ -16,20 +17,8 @@ def index(request):
 
 
 def update(request, id):
-
-<<<<<<< HEAD
-
-
-    
-=======
     if request.method == "POST":
->>>>>>> b37cc4448fdf6a19e3a24715be5ac0de4671ee72
+        textbox = Textbox.objects.filter(pk=id)
+        textbox.update(name=request.POST["name"].title())
 
-        textbox = Textbox.objects.filter(pk = id)
-        textbox.update(name = request.POST["name"] )
-        
-        return render(request,'update.html')
-
-    
-
-
+    return redirect("home/")
