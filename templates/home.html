@@ -9,41 +9,39 @@
             {% for i in dicts %}
 
 
-                <form action="{% url 'todo_list:update' i.id %}" method="POST">
-                    {% csrf_token %}
+            <form action="{% url 'todo_list:update' i.id %}" method="POST">
+                {% csrf_token %}
 
-                    <tr>
+                <tr>
 
-                        <td>
-                            <li><input type="text" value="{{i.name}}" name="name" style="display:inline" ></li>
-                        </td>
+                    <td>
+                        <li><input type="text" value="{{i.name}}" name="name" style="display:inline"></li>
+                    </td>
 
-                        <td>
-                            <p>
-                                <label>
-                                    <input type="checkbox"/>
-                                    <span>Done</span>
-                                </label>
-                            </p>
-                        </td>
+                    <td>
+                        <p>
+                            <label>
+                                <input type="checkbox"/>
+                                <span>Done</span>
+                            </label>
+                        </p>
+                    </td>
 
-                        <td><a href="{% url 'todo_list:delete' i.id %}"
-                            class="waves-effect waves-light btn-small red">Delete</a></td>
+                    <td><a href="{% url 'todo_list:delete' i.id %}"
+                           class="waves-effect waves-light btn-small red">Delete</a></td>
 
-                        <td>
-                            <a class="waves-effect waves-light btn-small red">
-                                <input type="submit" value="update">
-                            </a>
-                        </td>
-                    </tr>
-
-
-                </form>
+                    <td>
+                        <a class="waves-effect waves-light btn-small red">
+                            <input type="submit" value="update">
+                        </a>
+                    </td>
+                </tr>
 
 
+            </form>
 
 
-                {% endfor %}
+            {% endfor %}
         </ul>
     </table>
 </div>

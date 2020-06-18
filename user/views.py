@@ -9,13 +9,18 @@ def login(request):
         password = request.POST["pass"]
         user = auth.authenticate(username=username, password=password)
         if user is not None:
-            return redirect('home/')
-        elif User.objects.filter(username=username).exist():
-            messages.error(request, "User Name  is not valid")
+            auth.login(request, user)
+            return redirect("home/")
+        elif auth.authenticate(username=username) is not None and auth.authenticate(password=password) is None:
+            messages.info(request, "incorrect password")
             return render(request, "error_msg.html")
-        elif User.objects.filter(password=password).exist():
-            messages.error(request, "Incorrect password")
+        else:
+            messages.info(request, "invalid User")
             return render(request, "error_msg.html")
+
+
+
+
     else:
         return render(request, 'login.html')
 

@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from .models import Textbox
 
 
@@ -21,4 +21,4 @@ def update(request, id):
         textbox = Textbox.objects.filter(pk=id)
         textbox.update(name=request.POST["name"].title())
 
-    return redirect("home/")
+    return render(request, 'home.html', {"dicts": Textbox.objects.all()})
