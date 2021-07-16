@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <form action="{% url 'todo_list:search' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="search" placeholder="search Your list">
+        <button class="btn waves-effect waves-light btn-small green" type="submit"
+                name="action">Search
+            <i class="material-icons right">search</i>
+        </button>
+    </form>
+   <div class="container">
+    <table>
+        <ul>
+
+            {% for i in dicts %}
+
+
+            <form action="{% url 'todo_list:update' i.id %}" method="POST">
+                {% csrf_token %}
+
+                <tr>
+
+                    <td>
+                        <li><input type="text" value="{{i.name}}" name="name" style="display:inline"></li>
+                    </td>
+
+                    <td>
+                        <p>
+                            <label>
+                                <input type="checkbox"/>
+                                <span>Done</span>
+                            </label>
+                        </p>
+                    </td>
+
+                    <td><a
+                           class="waves-effect waves-light btn-small red">Delete</a></td>
+
+                    <td>
+                        <a class="waves-effect waves-light btn-small red">
+                            <input type="submit" value="update">
+                        </a>
+                    </td>
+                </tr>
+
+
+            </form>
+
+
+            {% endfor %}
+        </ul>
+    </table>
+</div>
+
+
+    </ul>
+</div>
+{% endblock %}

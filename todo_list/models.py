@@ -5,6 +5,11 @@ class Textbox(models.Model):
     name = models.CharField(max_length=100, null=True)
 
 
+    def __str__(self):
+        return self.name
+
+
+
 class Userinfo(models.Model):
     x = (("gaming", "gaming"),
          ("dancing", "dancing"),
@@ -25,9 +30,8 @@ class Product(models.Model):
     relbelongs = models.ManyToManyField(Userinfo)
 
 
-
     def __str__(self):
-        return self.name
+        return self.name    
 
 
 class Linked(models.Model):

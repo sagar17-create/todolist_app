@@ -1,25 +1,27 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
-
+from todo_list.models import Textbox
+from django.contrib.auth.hashers import check_password
+    
 
 def login(request):
     if request.method == "POST":
         username = request.POST["username"]
         password = request.POST["pass"]
-        user = auth.authenticate(username=username, password=password)
+
+        user = auth.authenticate(request, username=username, password=password)
         if user is not None:
             auth.login(request, user)
             return redirect("home/")
-        elif auth.authenticate(username=username) is not None and auth.authenticate(password=password) is None:
-            messages.info(request, "incorrect password")
-            return render(request, "error_msg.html")
+        if User.objects.filter(username=username).exists():
+            pass
         else:
-            messages.info(request, "invalid User")
+            messages.info(request, "User name not found".title())
             return render(request, "error_msg.html")
-
-
-
+        if User.objects.get(username=username).check_password(password) == False:
+            messages.info(request, "Incorrect password")
+            return render(request, "error_msg.html")
 
     else:
         return render(request, 'login.html')
@@ -47,3 +49,8 @@ def signup(request):
             return render(request, "error_msg.html")
     else:
         return render(request, 'signup.html')
+
+
+def logout(request):
+    auth.logout(request)
+    return redirect("/")

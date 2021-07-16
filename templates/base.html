@@ -9,44 +9,24 @@
     <title>Title</title>
 </head>
 <body>
+
 <nav>
-    <div class="nav-wrappe green">
-        <a href="/" class="brand-logo" ><i class="material-icons">
-            </i><font color = "#80e8a4">HOME</font></a>
-    </div>
+    <div class="nav-wrapper">
+        <a href="{% url 'todo_list:index' %}" class="brand-logo right">Home </a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="{% url 'todo_list:search' %}">Search</a></li>
+            <li><a href="{% url 'user:login' %}">Logout</a></li>
 
+        </ul>
+    </div>
 </nav>
-<h4><font color = "#2e4275"><center>My Regular To Do List</center></font></h4>
+<h4><font color="#2e4275">
+    <center>My Regular To Do List</center>
+</font></h4>
+
 <br>
 <br>
-<div class="container">
-    <div class="row">
-        <div class="col s12">
 
-            <center>
-                <form action="{% url 'todo_list:index' %}" method="post">
-                    {% csrf_token %}
-                    <table>
-
-                        <tr>
-                            <td><input type="text" name="search" placeholder="Add your daily activity" required></td>
-
-                            <td>
-                                <button class="btn waves-effect waves-light btn-small green" type="submit"
-                                        name="action">Add
-                                    <i class="material-icons right">send</i>
-                                </button>
-                            </td>
-                            {% for i in messages %}
-                                {{ i }}
-                            {% endfor %}
-                        </tr>
-                    </table>
-                </form>
-            </center>
-        </div>
-    </div>
-</div>
 {% block content %}
 {% endblock %}
 

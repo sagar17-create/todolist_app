@@ -1,5 +1,36 @@
 {% extends 'base.html' %}
 {% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <center>
+                <form action="{% url 'todo_list:index' %}" method="post">
+                    {% csrf_token %}
+                    <table>
+
+                        <tr>
+                            <td>
+                                <input type="text"  placeholder="search" name = "search">
+                            </td>
+
+                            <td>
+                                <button class="btn waves-effect waves-light btn-small green" type="submit"
+                                        name="action">Add
+                                    <i class="material-icons right">send</i>
+                                </button>
+
+
+                            </td>
+                            {% for i in messages %}
+                            {{ i }}
+                            {% endfor %}
+                        </tr>
+                    </table>
+                </form>
+            </center>
+        </div>
+    </div>
+</div>
 
 
 <div class="container">
