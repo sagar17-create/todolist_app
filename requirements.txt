@@ -15,7 +15,7 @@ pep8==1.7.1
 Pillow==7.1.2
 psycopg2==2.8.5
 pygame==1.9.6
-PyJWT==1.7.1
+PyJWT==2.4.0
 pylint==2.5.2
 pytz==2019.3
 pywifi==1.1.12
